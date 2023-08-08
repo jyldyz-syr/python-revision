@@ -322,40 +322,45 @@ for point in points:
 
 # CAST NAMES TURN INTO LIST AND DICT
 
-cast_names = ["Barney", "Robin", "Ted", "Lily", "Marshall"]
-cast_heights = [72, 68, 72, 66, 76]
+# cast_names = ["Barney", "Robin", "Ted", "Lily", "Marshall"]
+# cast_heights = [72, 68, 72, 66, 76]
 
-# list
-cast = zip(cast_names, cast_heights)
-finalCast = list(cast)
-print(finalCast)
+# # list
+# cast = zip(cast_names, cast_heights)
+# finalCast = list(cast)
+# print(finalCast)
 
-# dictionary
-cast = zip(cast_names, cast_heights)
-finalCast = dict(cast)
-print(finalCast)
+# # dictionary
+# cast = zip(cast_names, cast_heights)
+# finalCast = dict(cast)
+# print(finalCast)
 
 
 
-# Quiz: Enumerate (HARD FOR ME)
+# # Quiz: Enumerate (HARD FOR ME)
 cast = ["Barney Stinson", "Robin Scherbatsky", "Ted Mosby", "Lily Aldrin", "Marshall Eriksen"]
 heights = [72, 68, 72, 66, 76]
 
-# iterate using for loop and adding (i) index, (ii) value in enumerate(your_list):
-for num, character in enumerate(cast):
-    cast[num] = character +" " + str(heights[num])
-print(cast)
+# # iterate using for loop and adding (i) index, (ii) value in enumerate(your_list):
+# for num, character in enumerate(cast):
+#     cast[num] = character +" " + str(heights[num])
+# print(cast)
 
 
 # LIST COMPREHENSION
 # new_list = [expression for item in iterable] 
 # for example:
-capitalized_cities = [city.title() for city in cities]
-print(capitalized_cities)
+# capitalized_cities = [city.title() for city in cities]
+# print(capitalized_cities)
 
-# CONDITIONALS
-squares = [x**2 for x in range(9) if x % 2 == 0]
-print(squares)
+# # CONDITIONALS
+# squares = [x**2 for x in range(9) if x % 2 == 0]
+# print(squares)
 
-squares= [x**2 if x % 2 == 0 else x + 3 for x in range(9)]
-print(squares)
+# squares= [x**2 if x % 2 == 0 else x + 3 for x in range(9)]
+# print(squares)
+
+for num, character in enumerate(cast):
+    cast[num] = cast[num] +" " + str(heights[num])
+print(cast)
+
